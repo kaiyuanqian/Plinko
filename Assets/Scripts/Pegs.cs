@@ -24,7 +24,7 @@ public class Pegs : MonoBehaviour
         
         
         
-        for (float i = (float)resolution; i > 0; i++)
+        for (float i = 0f; i < resolution; i++)
         {
             for (int j = 0; j < i + 1; j++)
             {
