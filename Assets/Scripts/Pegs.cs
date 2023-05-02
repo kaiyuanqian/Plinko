@@ -28,9 +28,13 @@ public class Pegs : MonoBehaviour
         {
             for (int j = 0; j < i + 1; j++)
             {
+                if (i == 0)
+                {
+                    break;
+                }
                 Transform peg = Instantiate(pegPrefab);
                 position.x = (j - i / 2) * 1;
-                position.y = i * Mathf.Sqrt(3f/4f);
+                position.y = (resolution - 1 - i) * Mathf.Sqrt(3f/4f);
 
                 peg.position = position;
 
