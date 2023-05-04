@@ -17,12 +17,16 @@ public class BallSpawn : MonoBehaviour
         {
             var position = Vector3.zero;
             Transform ball = Instantiate(ballPrefab);
-            position.x = Random.Range(-0.3f, 0.3f);
+            position.x = Random.Range(-0.6f, 0.6f);
             position.y = pegsBoard.resolution;
             ball.position = position;
             ball.SetParent(transform, false);
+
+            
         }
     }
+
+    
 
     void Awake()
     {
@@ -32,7 +36,8 @@ public class BallSpawn : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        GameObject ball = GameObject.FindGameObjectWithTag("Ball");
+        Physics2D.IgnoreCollision(ball.GetComponent<Collider2D>(), GetComponent<Collider2D>());
     }
 
     // Update is called once per frame

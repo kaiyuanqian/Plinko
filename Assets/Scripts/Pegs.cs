@@ -28,7 +28,7 @@ public class Pegs : MonoBehaviour
         {
             for (int j = 0; j < i + 1; j++)
             {
-                if (i == 0)
+                if (i == 0 || i == 1)
                 {
                     break;
                 }
