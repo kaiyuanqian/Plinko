@@ -7,6 +7,9 @@ public class BallSpawn : MonoBehaviour
     [SerializeField]
     Transform ballPrefab;
 
+    [SerializeField]
+    Pegs pegsBoard;
+
     void ballSpawner() // spawns ball on mouse click
     {
         
@@ -15,7 +18,7 @@ public class BallSpawn : MonoBehaviour
             var position = Vector3.zero;
             Transform ball = Instantiate(ballPrefab);
             position.x = Random.Range(-0.3f, 0.3f);
-            position.y = 9;
+            position.y = pegsBoard.resolution;
             ball.position = position;
             ball.SetParent(transform, false);
         }

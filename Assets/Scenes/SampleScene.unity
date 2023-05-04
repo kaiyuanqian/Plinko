@@ -283,6 +283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballPrefab: {fileID: 5889687861177194444, guid: 49c7842238fd64260b5cb21bb1779718, type: 3}
+  pegsBoard: {fileID: 1492283754}
 --- !u!4 &2012416393
 Transform:
   m_ObjectHideFlags: 0
