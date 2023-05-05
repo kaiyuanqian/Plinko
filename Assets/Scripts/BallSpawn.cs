@@ -36,8 +36,10 @@ public class BallSpawn : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        /*
         GameObject ball = GameObject.FindGameObjectWithTag("Ball");
         Physics2D.IgnoreCollision(ball.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+        */
     }
 
     // Update is called once per frame

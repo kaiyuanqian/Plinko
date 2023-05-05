@@ -15,7 +15,9 @@ public class Balls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         GameObject ball = GameObject.FindGameObjectWithTag("Ball");
         Physics2D.IgnoreCollision(ball.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+        */
     }
 }
