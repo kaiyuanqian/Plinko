@@ -18,7 +18,7 @@ public class BallSpawn : MonoBehaviour
             var position = Vector3.zero;
             Transform ball = Instantiate(ballPrefab);
             position.x = Random.Range(-0.6f, 0.6f);
-            position.y = pegsBoard.resolution;
+            position.y = pegsBoard.resolution - 1;
             ball.position = position;
             ball.SetParent(transform, false);
 

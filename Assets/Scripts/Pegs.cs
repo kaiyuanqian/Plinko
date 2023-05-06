@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Pegs : MonoBehaviour
 {
-    [SerializeField, Range(8, 16)]
-    public int resolution = 8;
+    [SerializeField, Range(8, 12)]
+    public int resolution = 12;
 
     [SerializeField]
     Transform pegPrefab;
