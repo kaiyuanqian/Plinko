@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Balls : MonoBehaviour
 {
+
     
 
     // Start is called before the first frame update
@@ -19,5 +20,6 @@ public class Balls : MonoBehaviour
         GameObject ball = GameObject.FindGameObjectWithTag("Ball");
         Physics2D.IgnoreCollision(ball.GetComponent<Collider2D>(), GetComponent<Collider2D>());
         */
+        
     }
 }

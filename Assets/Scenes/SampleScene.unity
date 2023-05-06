@@ -320,7 +320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30d606f007b6d4dc3b713748648afbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resolution: 9
+  resolution: 12
   pegPrefab: {fileID: 6581106643927305957, guid: f11df3714e1064aa08e2390d41782d15, type: 3}
 --- !u!4 &1492283755
 Transform:

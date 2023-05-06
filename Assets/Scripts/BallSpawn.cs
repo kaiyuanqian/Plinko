@@ -46,5 +46,10 @@ public class BallSpawn : MonoBehaviour
     void Update()
     {
         ballSpawner();
+        GameObject gameObject = GameObject.FindGameObjectWithTag("Ball");
+        if (gameObject.transform.position.y < -1)
+        {
+            Destroy(gameObject);
+        }
     }
 }
